@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Artifika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Artifika&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+	scroll-behavior: smooth;
+	font-family: Rubik;
+}
+#app {
+	height: 100%;
+}
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+  
+body {
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+  
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+  
+.swiper-slide {
+	
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	
+}
+  
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.swiper-pagination-bullet{
+	background-color: rgb(2, 2, 29);
+}
+.customBackground{
+	background-image: url(images/backgroundImage.svg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.customFont{
+	font-family: Artifika;
+}
+.fontRubik{
+	font-family: rubik;
+}
+.customGrid{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: space-between;
+	row-gap: 34px;
+}
+.customEffect{
+	transition: all 0.2s;
+}
+.customEffect:hover{
+	transform: scale(1.03);
+}
+.customResponsive{
+	display: flex;
+	justify-content: space-between;
+}
+.customImage{
+	width: 100%;
+	background-image: url('./images/Rectangle 59.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.customGridTemplate{
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	justify-content: space-between;
+}
+
+@media (max-width: 1200px){
+	.customGrid{
+		grid-template-columns: auto auto;
+		row-gap: 60px;
+	}
+}
+@media (max-width: 850px){
+	.customGrid{
+		display: grid;
+		grid-template-columns: auto;
+		justify-content: center;
+		row-gap: 60px;
+	}
+}
+@media (max-width: 1420px){
+	.customResponsive{
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+		padding-bottom: 48px;
+	}
+}
+@media (max-width: 860px){
+	.customResponsive2{
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 24px;
+		padding-bottom: 48px;
+	}
+}
+@media (max-width: 1280px){
+	.customGridTemplate{
+		width: 100%;
+		display: grid;
+		grid-template-columns:  auto auto;
+		justify-content: center;
+		row-gap: 48px;
+		column-gap: 48px;
+	}
+
+}
